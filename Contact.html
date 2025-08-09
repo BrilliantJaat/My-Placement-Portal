@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page - Placement Management Portal</title>
+  <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <form class="contact-form" method="POST" action="Contact.php">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" placeholder="Enter subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-box">
+      <h2>Contact Information</h2>
+      <p><strong>Swami Keshvanand Institute of Technology, Management & Gramothan</strong></p>
+      <p><strong>Address:</strong> Ramnagaria, Jagatpura, Jaipur, Rajasthan - 302017</p>
+      <p><strong>Phone:</strong> +91-141-5160400, +91-141-5160415</p>
+      <p><strong>Email:</strong> info@skit.ac.in</p>
+      <p><strong>Website:</strong> <a href="https://www.skit.ac.in" target="_blank">www.skit.ac.in</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
