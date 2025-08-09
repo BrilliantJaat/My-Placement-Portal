@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Company Directory</title>
+  <link rel="stylesheet" href="Companies.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>OUR PLACEMENTS PARTNER</h1>
+  </header>
+
+  <main>
+    <section class="filter-row">
+      <input id="search" placeholder="Search companies..." />
+    </section>
+
+    <section class="grid" id="companyGrid">
+      <!-- Each .card represents a company. Add/remove companies below as needed -->
+      <div class="card"><div class="logo">IF</div><div class="name">Infosys</div></div>
+      <div class="card"><div class="logo">TCS</div><div class="name">TCS</div></div>
+      <div class="card"><div class="logo">KL</div><div class="name">Kloudeva</div></div>
+      <div class="card"><div class="logo">AX</div><div class="name">Axes Track</div></div>
+      <div class="card"><div class="logo">MD</div><div class="name">Metadrob</div></div>
+      <div class="card"><div class="logo">AU</div><div class="name">Auriga IT</div></div>
+      <div class="card"><div class="logo">CE</div><div class="name">Celebal</div></div>
+      <div class="card"><div class="logo">IN</div><div class="name">Intime Tec</div></div>
+      <div class="card"><div class="logo">CO</div><div class="name">Cognizant</div></div>
+      <div class="card"><div class="logo">PN</div><div class="name">Pinnacle Infotech Solutions</div></div>
+      <div class="card"><div class="logo">AP</div><div class="name">AppPerfect</div></div>
+      <div class="card"><div class="logo">BC</div><div class="name">Bot Consulting</div></div>
+      <div class="card"><div class="logo">CY</div><div class="name">Cyntexa</div></div>
+      <div class="card"><div class="logo">WG</div><div class="name">WatchGuard Technologies</div></div>
+      <div class="card"><div class="logo">IBM</div><div class="name">IBM</div></div>
+      <div class="card"><div class="logo">DK</div><div class="name">Daikin</div></div>
+      <div class="card"><div class="logo">MC</div><div class="name">Metacube</div></div>
+      <div class="card"><div class="logo">ST</div><div class="name">Softshala Technologies</div></div>
+      <div class="card"><div class="logo">CM</div><div class="name">Cloud Mentor</div></div>
+      <div class="card"><div class="logo">GX</div><div class="name">GenXAI Analytics</div></div>
+      <div class="card"><div class="logo">TM</div><div class="name">Tech Mahindra</div></div>
+      <div class="card"><div class="logo">AA</div><div class="name">Aavas Financiers</div></div>
+      <div class="card"><div class="logo">IN</div><div class="name">Innora</div></div>
+      <div class="card"><div class="logo">WM</div><div class="name">Wipro</div></div>
+      <div class="card"><div class="logo">HP</div><div class="name">HCL</div></div>
+      <div class="card"><div class="logo">PN</div><div class="name">PWC</div></div>
+      <div class="card"><div class="logo">OG</div><div class="name">Oracon Global</div></div>
+      <div class="card"><div class="logo">AMWL</div><div class="name">AMWL</div></div>
+      <div class="card"><div class="logo">PB</div><div class="name">Polycab</div></div>
+      <div class="card"><div class="logo">TG</div><div class="name">Torrent Gas</div></div>
+      <!-- Add more cards as you want -->
+    </section>
+  </main>
+  <script>
+    // Simple client-side search/filter for names
+    const search = document.getElementById('search');
+    const grid = document.getElementById('companyGrid');
+    search.addEventListener('input', (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      const cards = grid.querySelectorAll('.card');
+      cards.forEach(card => {
+        const name = card.querySelector('.name').textContent.toLowerCase();
+        card.style.display = name.includes(q) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
