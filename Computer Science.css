@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+.image-section{
+    flex: 1 1 40%;
+    padding: 10px;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    margin-left: 20px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
